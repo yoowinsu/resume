@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        @font-face {
+            font-family: 'addicon';  /* project id 284620 */
+            src: url('//at.alicdn.com/t/font_h8bp3ub0rkricnmi.eot');
+            src: url('//at.alicdn.com/t/font_h8bp3ub0rkricnmi.eot?#iefix') format('embedded-opentype'),
+            url('//at.alicdn.com/t/font_h8bp3ub0rkricnmi.woff') format('woff'),
+            url('//at.alicdn.com/t/font_h8bp3ub0rkricnmi.ttf') format('truetype'),
+            url('//at.alicdn.com/t/font_h8bp3ub0rkricnmi.svg#iconfont') format('svg');
+        }
+        /*css reset*/
+        body,ul,ol,p,h1,h2,h3,h4{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            list-style: none;
+        }
+
+        /*base*/
+        .layout{
+            width: 900px;
+            margin: 0 auto;
+        }
+        .clearfix:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        h2{
+            font: 400 24px/30px Arial;
+            line-height: 30px;
+            color: #000;
+        }
+        .thin-bottom-border{
+            color: #000;
+            border-bottom: 1px solid #ccc;
+            display: block;
+            width: 50%;
+            margin-bottom: 10px;
+            padding-bottom: 6px;
+        }
+        /*index*/
+        body{
+            font-family: Arial;
+            color: #253844;
+        }
+        a{
+            color: #253844;
+        }
+        #header{
+            padding: 40px 0;
+        }
+        #header .logo{
+            float: left;
+            padding-top: 20px;
+        }
+        #header .logo img{
+            width: 100px;
+            border-radius: 50%;
+            float: left;
+            box-shadow: 2px 2px 4px 0 rgba(0,0,0,0.3);
+        }
+        #header .logo .name{
+            float: left;
+            margin-left: 40px;
+            margin-top: 20px;
+        }
+        #header .logo .name h1{
+            font: 400 40px/40px Arial;
+            margin-bottom: 10px;
+        }
+        #header .logo .name p{
+            color: #505553;
+            font: 600 16px 18px Helvetica;
+        }
+        #header .contacts{
+            float: right;
+            margin-right: 30px;
+        }
+        #header .contacts h2{
+            display: block;
+            color: #000;
+            border-bottom: 4px solid #000;
+        }
+        #header .contacts ul{
+            margin-top: 4px;
+        }
+        #header .contacts li{
+            padding: 4px;
+        }
+        #header .contacts span{
+            font-weight: bold;
+        }
+        .experience ul,.education ul,.others ul{
+            padding-left: 60px;
+            margin: 30px 0;
+            border-left: 1px solid #000;
+            position: relative;;
+        }
+        .experience ul li,.education ul li,.others ul li{
+            margin-bottom: 20px;
+        }
+        .experience ul li:before,.education ul li:before{
+            content: "";
+            border: 6px solid #000;
+            border-radius: 50%;
+            position: absolute;
+            left: -6px;
+        }
+        .experience h3,.education h3,.others h3{
+            font: 400 20px/20px Arial;
+            padding-bottom: 10px;
+        }
+        .experience h3 span,.education h3 span,.others h3 span{
+            color: #3c3c3c;
+            font-size: 16px;
+        }
+        .others .extra{
+            width: 450px;
+            float: left;
+        }
+        .others .skill{
+            float: left;
+            width: 340px;
+            margin-left: 60px;
+        }
+        .others h2{
+            width: 100%;
+        }
+        .education,.others ,.experience{
+            margin-top: 40px;
+        }
+
+        .others ul{
+            border: none;
+        }
+        .others ul li{
+            position: relative;
+        }
+        .others .extra li:before{
+            content: "\e639";
+            font-family: "addicon";
+            position: absolute;
+            left:-60px;
+            font-size: 24px;
+        }
+        .others .skill li:before{
+            content: "\e639";
+            font-family: "addicon";
+            position: absolute;
+            left: -40px;;
+            font-size: 24px;
+        }
+        .others .skill ul{
+            padding-left: 40px;
+        }
+        .others .skill li{
+            float: left;
+            width: 150px;
+        }
+    </style>
+</head>
+<body class="layout">
+<div id="header" class="layout clearfix">
+    <div class="logo clearfix">
+        <img src="https://avatars0.githubusercontent.com/u/20217398?v=3&s=460" alt=""/>
+        <div class="name">
+            <h1>Yoowin Su</h1>
+            <p>Web-Designer</p>
+        </div>
+    </div>
+    <div class="contacts">
+        <h2>CONTACTS</h2>
+        <ul>
+            <li><span>Adress: </span>ZhengZhou,China</li>
+            <li><span>Phone: </span>155-3803-5803</li>
+            <li><span>Email: </span>yoowinsu@gmail.com</li>
+            <li><span>Blog: </span><a href="https://github.com/yoowinsu/blog">https://github.com/yoowinsu/blog</a></li>
+        </ul>
+    </div>
+</div>
+<section class="experience layout">
+    <h2 class="thin-bottom-border">WORK EXPERIENCE</h2>
+    <ul>
+        <li>
+            <h3>A company / <span> 201X-201X</span></h3>
+            <p>This is just a passage, so write it, and I will use this template to refactor when my technology is mature.</p>
+        </li>
+        <li>
+            <h3>A company / <span> 201X-201X</span></h3>
+            <p>This is just a passage, so write it, and I will use this template to refactor when my technology is mature.</p>
+        </li>
+        <li>
+            <h3>A company / <span> 201X-201X</span></h3>
+            <p>This is just a passage, so write it, and I will use this template to refactor when my technology is mature.</p>
+        </li>
+    </ul>
+</section>
+<section class="education layout">
+    <h2 class="thin-bottom-border">EDUCATION</h2>
+    <ul>
+        <li>
+            <h3>University / <span> 201X-201X</span></h3>
+            <p>This is just a passage, so write it, and I will use this template to refactor when my technology is mature.</p>
+        </li>
+        <li>
+            <h3>High School / <span> 201X-201X</span></h3>
+            <p>This is just a passage, so write it, and I will use this template to refactor when my technology is mature.</p>
+        </li>
+    </ul>
+</section>
+<section class="others layout clearfix">
+    <div class="extra">
+        <h2 class="thin-bottom-border">CURRICULAR ACTIVITIES</h2>
+        <ul>
+            <li>
+                <h3>EXTRA</h3>
+                <p>This is just a passage, so write it, and I will use this template to refactor when my technology is mature.</p>
+            </li>
+            <li>
+                <h3>EXTRA</h3>
+                <p>This is just a passage, so write it, and I will use this template to refactor when my technology is mature.</p>
+            </li>
+        </ul>
+    </div>
+    <div class="skill">
+        <h2 class="thin-bottom-border">PROFESIONAL SKILLS</h2>
+        <ul>
+            <li>HTML&CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>PHOTOSHOP</li>
+            <li>JQUERY</li>
+            <li>SLIM</li>
+            <li>ILLUSTRATOR</li>
+        </ul>
+    </div>
+    </div>
+</section>
+</body>
+</html>
