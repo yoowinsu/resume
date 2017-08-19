@@ -86,7 +86,7 @@
 		background-color: #00A1DD;
 	}
 
-	h3{
+	.layout h3{
 		margin: 0.15rem 0;
 	}
 
@@ -102,21 +102,23 @@
 		vertical-align: middle;
 	}
 
-	.project{
-		margin: 0.1rem 0;
+	.contact,.project,.skill-list{
+		margin-left: 0.15rem;
 	}
 
 	.project>li{
-		margin: 0.1rem 0;
+		margin: 0.1rem 0 0.25rem;
 	}
 
-	.project>li>ul,.skill ul,.skill ul{
+	.project>li>ul,.skill .skill-list{
 		padding-left: 0.3rem;
 	}
 
-
 	h5{
 		margin: 0.08rem 0;
+	}
+	.skill-list h5{
+		margin-left: -0.3rem;
 	}
 
 	</style>
@@ -137,8 +139,8 @@
 					<li class="phone"><i>&#xe6ed;</i><span>电话：</span>15538035803</li>
 					<li class="wechat"><i>&#xe60e;</i><span>微信：</span>suyingwei03</li>
 					<li class=""><i>&#xe640;</i><span>学历：</span>黄河科技学院-本科</li>
-					<li class=""><i>&#xe634;</i><span>博客：</span><a href="https://yoowinsu.github.io/">https://yoowinsu.github.io/</a></li>
-					<li class=""><i>&#xeaf6;</i><span>github：</span><a href="https://github.com/yoowinsu">https://github.com/yoowinsu</a></li>
+					<li class=""><i>&#xe634;</i><span>博客：</span><a href="https://yoowinsu.github.io/">yoowin.me</a></li>
+					<li class=""><i>&#xeaf6;</i><span>github：</span><a href="https://github.com/yoowinsu">github.com/yoowinsu</a></li>
 				</ul>
 			</div>
 		</div>
@@ -151,49 +153,41 @@
 					<ul>
 						<li>
 							<h5>时间</h5>
-							<p>2017/1——2017/3</p>
+							<p>2016/5——2016/10</p>
 						</li>
 						<li>
 							<h5>使用技术</h5>
-							<p>JavaScript、requireJS、less、gulp</p>
+							<p>jQuery、CSS</p>
 						</li>
 						<li>
 							<h5>项目简述</h5>
-							<p>设计优雅、内容完善的静态简历页面</p>
-							<p>百草味官网</p>
+							<p>1.本项目是一个具备购物类网站基本常用功能的项目</p>
+							<p>2.本项目基于jQuery库，实现了主页二级菜单、banner轮播、sidebar、登录注册以及购物车页面等功能设计优雅、内容完善的静态简历页面</p>
 						</li>
 						<li>
-							<h5>实现细节</h5>
-							<p>。</p>
-							<p>。</p>
+							<h5>项目地址</h5>
+							<p><a href="http://www.yoowin.me/baicaowei/index.html">yoowinsu.github.io/baicaowei</a></p>
 						</li>
 					</ul>
 				</li>
-				<li class="ife2017">
-					<h4>IFE2017</h4>
+				<li class="todo">
+					<h4>Todolist</h4>
 					<ul>
 						<li>
 							<h5>时间</h5>
-							<p>2017/3——2017/4</p>
+							<p>2017/4——2017/5</p>
 						</li>
 						<li>
 							<h5>项目简述</h5>
-							<p>设计优雅、内容完善的静态简历页面</p>
-							<p>百度前端技术学院2017届学员</p>
+							<p>本项目是初次接触Vue框架做的项目</p>
 						</li>
 						<li>
-							<h5>开发环境</h5>
-							<p>Webstorm、GitHub、Chrome、、</p>
+							<h5>使用技术</h5>
+							<p>ES6、Flex、Vue、vue-cli</p>
 						</li>
 						<li>
-							<h5>问题及解决</h5>
-							<p>待完善。。</p>
-							<p>待完善。。</p>
-						</li>
-						<li>
-							<h5>项目收获</h5>
-							<p>待完善。。</p>
-							<p>待完善。。</p>
+							<h5>项目地址</h5>
+							<p><a href="http://www.yoowin.me/vue-todolist">yoowinsu.github.io/vue-todolist</a></p>
 						</li>
 					</ul>
 				</li>
@@ -202,35 +196,47 @@
 					<ul>
 						<li>
 							<h5>时间</h5>
-							<p>2017/3——2017/4</p>
+							<p>2017/4——2017/6</p>
+						</li>
+						<li>
+							<h5>使用技术</h5>
+							<p>Node.js、express、less、jQuery、webpack、ES6、Sequelize</p>
 						</li>
 						<li>
 							<h5>项目简述</h5>
-							<p>设计优雅、内容完善的静态简历页面</p>
-							<p>Express搭建在线便利贴</p>
+							<p>1.本项目是基于express框架实现的一个前后端的在线便利贴项目</p>
+							<p>2.本项目实现了GitHub登录功能，利用Sequelize数据库保存用户数据，根据发布订阅模式实现toast功能</p>
 						</li>
 						<li>
-							<h5>项目收获</h5>
-							<p>待完善。。</p>
-							<p>待完善。。</p>
+							<h5>项目地址</h5>
+							<p><a href="https://github.com/yoowinsu/express-sticky-note">github.com/yoowinsu/express-sticky-note</a></p>
 						</li>
 					</ul>
 				</li>
 				<li class="react">
-					<h4>React项目</h4>
+					<h4>在线简历编辑器</h4>
 					<ul>
 						<li>
 							<h5>时间</h5>
-							<p>2017/1——2017/4</p>
+							<p>2017/5——2017/7</p>
+						</li>
+						<li>
+							<h5>使用技术</h5>
+							<p>Vue、Vue-cli、scss、ES6、webpack</p>
 						</li>
 						<li>
 							<h5>项目简述</h5>
-							<p>设计优雅、内容完善的静态简历页面</p>
-							<p>react框架搭建的几个项目</p>
+							<p>1.本项目是一个可以在线编辑及生成简历的项目，提供预览和pdf下载功能</p>
+							<p>2.项目基于Vue框架，构建工具是vue-cli</p>
+							<p>3.页面很简洁，实现了登录注册功能，提供6中视觉UI可供选择</p>
+						</li>
+						<li>
+							<h5>项目地址</h5>
+							<p><a href="https://github.com/yoowinsu/vue-resume-editor">github.com/yoowinsu/vue-resume-editor</a></p>
 						</li>
 					</ul>
 				</li>
-				<li class="music">
+				<!-- <li class="music">
 					<h4>音乐播放器</h4>
 					<ul>
 						<li>
@@ -239,7 +245,7 @@
 						</li>
 						<li>
 							<h5>项目简述</h5>
-							<p>设计优雅、内容完善的静态简历页面</p>
+							<p></p>
 							<p>待完善。。</p>
 						</li>
 						<li>
@@ -248,8 +254,8 @@
 							<p>待完善。。</p>
 						</li>
 					</ul>
-				</li>
-				<li class="weather-view">
+				</li> -->
+				<!-- <li class="weather-view">
 					<h4>weather-view</h4>
 					<ul>
 						<li>
@@ -265,17 +271,22 @@
 							<p>——————</p>
 						</li>
 					</ul>
-				</li>
+				</li> -->
 				<li class="package-repo">
 					<h4>JS组件库</h4>
 					<ul>
 						<li>
 							<h5>时间</h5>
-							<p>ddd</p>
+							<p>2017/1-2017/8</p>
 						</li>
 						<li>
 							<h5>项目描述</h5>
-							<p>ddd</p>
+							<p>对一些常用的功能进行了组件封装</p>
+							<p>包括轮播、Tab、分页、dialog、日历、懒加载等组件</p>
+						</li>
+						<li>
+							<h5>项目地址</h5>
+							<p><a href="https://github.com/yoowinsu/fe-components">github.com/yoowinsu/fe-components</a></p>
 						</li>
 					</ul>
 				</li>
@@ -284,59 +295,49 @@
 					<ul>
 						<li>
 							<h5>时间</h5>
-							<p>ddd</p>
+							<p>2016/9-2017-8</p>
 						</li>
 						<li>
 							<h5>项目描述</h5>
-							<p>ddd</p>
+							<p>日常做的小项目、静态页、小功能、效果、CSS布局等等</p>
+						</li>
+						<li>
+							<h5>项目地址</h5>
+							<p><a href="https://github.com/yoowinsu/demos">github.com/yoowinsu/demos</a></p>
 						</li>
 					</ul>
-				</li>
-				<li class="more">
-					<h4>更多作品</h4>
-					<p>github:____</p>
 				</li>
 			</ul>
 		</div>
 
 		<div class="skill">
 			<h3 class="title">技能概况</h3>
-			<ul>
+			<ul class="skill-list">
 				<li class="html-css">
 					<h5>HTML/CSS/工具</h5>
-					<p>熟悉w3c规范，</p>
-					<p>W3C规范、开发调试、浏览器兼容、代码可读性、常见布局、HTML5、CSS3、盒模型、浮动定位、BFC、CSS3动画、flex、栅格、响应式</p>
-					<p>Git、Sublime、WebStrom、 Linux 命令行</p>
-					<p>1. 栅格系统 2. CSS3 loading动画 3. CSS3 3D效果 4. 一个简单的UI库 5. 常见布局整理 6. BFC概念的博客 7. 代码规范的企业站首页... </p>
+					<p>熟悉w3c规范，了解HTML5、CSS3新规范</p>
+					<p>熟悉常见浏览器兼容问题</p>
+					<p>熟悉常见布局、盒模型、浮动、定位、flex</p>
+					<p>熟悉Git版本控制工具，熟悉Sublime、VSCode等IDE，熟悉常用Linux 命令行</p>
 				</li>
 				<li class="javascript">
 					<h5>JavaScript</h5>
-					<p>实现常见效果、原生、事件模型、DOM 操作、ajax、jsonp、跨域、闭包、原型链、面向对象、封装、jquery、jquery 插件、UI 组件</p>
-					<p>1. 实现的util库（事件兼容封装、ajax、jsonp 的封装... ）; </p>
-					<p>2. 原生UI组件库（1，2，3）; </p>
-					<p>3. jQuery插件库(1,2,3) ;</p>
-					<p>4. 原型链文章 ;</p>
-					<p>5. 新闻站(jsonp+瀑布流+懒加载); </p>
-					<p>6. 一篇 jquery 源码分析的文章</p>
+					<p>熟悉js常见效果,实现了原生UI组件库</p>
+					<p>熟悉事件、DOM 操作、AJAX、跨域、闭包、原型链、面向对象、封装</p>
 				</li>
 				<li class="tools">
-					<h5>框架/工具</h5>
-					<p>bootstrap, requirejs, npm, nodejs, gulp, webpack, less</p>
-					<p>1.一个企业站首页（less, autoprefixer, gulp, requirejs）</p>  
-					<p>2. 一个 xx 网站(less, webpack)</p>
+					<h5>库/工具</h5>
+					<p>熟悉jQuery、bootstrap</p>
+					<p>了解npm、gulp、webpack、less等工具</p>
 				</li>
 				<li class="rear-end">
 					<h5>后端语言</h5>
-					<p>熟悉nodejs, webserver， http</p>
-					<p>1. 一个 node命令行工具 weather-view ;</p>
-					<p>2. express 搭建的个人博客 ;</p>
-					<p>3. 写的一篇 http 的博客</p>				
+					<p>了解nodejs, http</p>			
 				</li>
 				<li class="other">
 					<h5>新技术/其他</h5>
-					<p>了解react, es6 ,</p>
-					<p>1. react project</p>
-					<p>2. angular todolist</p>
+					<p>了解Vue</p>  
+					<p>了解ES6、babel、grid</p>
 				</li>
 			</ul>
 		</div>
