@@ -44,6 +44,9 @@
 	}
 
 	.title{
+		position: relative;
+		left: -0.2rem;
+		padding-left: 0.2rem;
 		background: linear-gradient(to right, #FFE5EF, #fff);
 	}
 
@@ -102,25 +105,27 @@
 		vertical-align: middle;
 	}
 
-	.contact,.project,.skill-list{
-		margin-left: 0.15rem;
-	}
-
 	.project>li{
 		margin: 0.1rem 0 0.25rem;
 	}
 
 	.project>li>ul,.skill .skill-list{
-		padding-left: 0.3rem;
+		padding-left: 0.1rem;
 	}
 
 	h5{
 		margin: 0.08rem 0;
 	}
 	.skill-list h5{
-		margin-left: -0.3rem;
+		margin-left: -0.1rem;
 	}
 
+	@media print{
+		.layout>h3{
+			text-align: center;
+			font-size: 24px;
+		}
+	}
 	</style>
 </head>
 <body>
@@ -149,7 +154,7 @@
 			<h3 class="title">项目经验</h3>
 			<ul class="project">
 				<li class="baicaowei">
-					<h4>百草味官网</h4>
+					<h4>百草味商城</h4>
 					<ul>
 						<li>
 							<h5>时间</h5>
@@ -166,7 +171,7 @@
 						</li>
 						<li>
 							<h5>项目地址</h5>
-							<p><a href="http://www.yoowin.me/baicaowei/index.html">yoowinsu.github.io/baicaowei</a></p>
+							<p><a href="http://www.yoowin.me/baicaowei/index.html">百草味商城</a></p>
 						</li>
 					</ul>
 				</li>
@@ -187,7 +192,7 @@
 						</li>
 						<li>
 							<h5>项目地址</h5>
-							<p><a href="http://www.yoowin.me/vue-todolist">yoowinsu.github.io/vue-todolist</a></p>
+							<p><a href="http://www.yoowin.me/vue-todolist">todolist</a></p>
 						</li>
 					</ul>
 				</li>
@@ -209,7 +214,7 @@
 						</li>
 						<li>
 							<h5>项目地址</h5>
-							<p><a href="https://github.com/yoowinsu/express-sticky-note">github.com/yoowinsu/express-sticky-note</a></p>
+							<p><a href="https://github.com/yoowinsu/express-sticky-note">在线便利贴</a></p>
 						</li>
 					</ul>
 				</li>
@@ -232,7 +237,7 @@
 						</li>
 						<li>
 							<h5>项目地址</h5>
-							<p><a href="https://github.com/yoowinsu/vue-resume-editor">github.com/yoowinsu/vue-resume-editor</a></p>
+							<p><a href="https://github.com/yoowinsu/vue-resume-editor">在线简历编辑器</a></p>
 						</li>
 					</ul>
 				</li>
@@ -286,7 +291,7 @@
 						</li>
 						<li>
 							<h5>项目地址</h5>
-							<p><a href="https://github.com/yoowinsu/fe-components">github.com/yoowinsu/fe-components</a></p>
+							<p><a href="https://github.com/yoowinsu/fe-components">JS组件库</a></p>
 						</li>
 					</ul>
 				</li>
@@ -303,7 +308,7 @@
 						</li>
 						<li>
 							<h5>项目地址</h5>
-							<p><a href="https://github.com/yoowinsu/demos">github.com/yoowinsu/demos</a></p>
+							<p><a href="https://github.com/yoowinsu/demos">日常实现的一些效果</a></p>
 						</li>
 					</ul>
 				</li>
