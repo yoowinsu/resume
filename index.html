@@ -5,14 +5,14 @@
 	<title>苏英伟_前端工程师_简历</title>
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<style>
-	@font-face {
-	  font-family: 'iconfont';  /* project id 330830 */
-	  src: url('//at.alicdn.com/t/font_mf9qcqxfq94ibe29.eot');
-	  src: url('//at.alicdn.com/t/font_mf9qcqxfq94ibe29.eot?#iefix') format('embedded-opentype'),
-	  url('//at.alicdn.com/t/font_mf9qcqxfq94ibe29.woff') format('woff'),
-	  url('//at.alicdn.com/t/font_mf9qcqxfq94ibe29.ttf') format('truetype'),
-	  url('//at.alicdn.com/t/font_mf9qcqxfq94ibe29.svg#iconfont') format('svg');
-	}
+		@font-face {
+			font-family: 'iconfont';  /* project id 330830 */
+			src: url('//at.alicdn.com/t/font_330830_mbsb1ka7dczvvx6r.eot');
+			src: url('//at.alicdn.com/t/font_330830_mbsb1ka7dczvvx6r.eot?#iefix') format('embedded-opentype'),
+			url('//at.alicdn.com/t/font_330830_mbsb1ka7dczvvx6r.woff') format('woff'),
+			url('//at.alicdn.com/t/font_330830_mbsb1ka7dczvvx6r.ttf') format('truetype'),
+			url('//at.alicdn.com/t/font_330830_mbsb1ka7dczvvx6r.svg#iconfont') format('svg');
+		}
 	/*cssreset*/
 	*{
 		margin: 0;
@@ -102,8 +102,26 @@
 		padding-left: 0.1rem;
 	}
 
+	.experience button{
+		background-color: transparent;
+		border: none;
+		color: #8590a6;
+		outline: none;
+		position: absolute;
+		top: 4px;
+		right: 10px;
+		cursor: pointer;
+	}
+
 	.project>li{
 		margin: 0.1rem 0 0.25rem;
+		position: relative;
+	}
+	.project>li>button.open~ul{
+		display: none;
+	}
+	.project>li>button.close~ul{
+		display: block;
 	}
 
 	.project>li>ul,.skill .skill-list{
@@ -116,6 +134,8 @@
 	.skill-list h5{
 		margin-left: -0.1rem;
 	}
+
+
 
 	@media print{
 		.layout>h3{
@@ -151,11 +171,7 @@
 			<ul>
 				<li>
 					<h5>公司</h5>
-					<p>岁月树</p>
-				</li>
-				<li>
-					<h5>地址</h5>
-					<p>郑州</p>
+					<p>岁月树（郑州）</p>
 				</li>
 				<li>
 					<h5>时间</h5>
@@ -174,6 +190,7 @@
 			<h3 class="title">项目经验</h3>
 			<ul class="project">
 				<li class="baicaowei">
+					<button class="open">展开 &#xe67d;</button>
 					<h4>百草味商城</h4>
 					<ul>
 						<li>
@@ -196,6 +213,7 @@
 					</ul>
 				</li>
 				<li class="todo">
+					<button class="open">展开 &#xe67d;</button>
 					<h4>Todolist</h4>
 					<ul>
 						<li>
@@ -217,6 +235,7 @@
 					</ul>
 				</li>
 				<li class="stickers">
+					<button class="open">展开 &#xe67d;</button>
 					<h4>在线便利贴</h4>
 					<ul>
 						<li>
@@ -239,6 +258,7 @@
 					</ul>
 				</li>
 				<li class="react">
+					<button class="open">展开 &#xe67d;</button>
 					<h4>在线简历编辑器</h4>
 					<ul>
 						<li>
@@ -262,6 +282,7 @@
 					</ul>
 				</li>
 				<li class="package-repo">
+					<button class="open">展开 &#xe67d;</button>
 					<h4>JS组件库</h4>
 					<ul>
 						<li>
@@ -280,6 +301,7 @@
 					</ul>
 				</li>
 				<li class="often">
+					<button class="open">展开 &#xe67d;</button>
 					<h4>日常实现的一些效果</h4>
 					<ul>
 						<li>
@@ -330,7 +352,23 @@
 				</li>
 			</ul>
 		</div>
-
 	</div>
 </body>
+<script>
+	let ul = document.querySelector('ul.project');
+
+	ul.addEventListener('click',function (e) {
+		if(e.target.tagName.toLowerCase() === 'button'){
+			if(e.target.className === 'open'){
+				e.target.classList.remove('open')
+				e.target.classList.add('close')
+				e.target.innerHTML = '收起 &#xe686;'
+			}else{
+				e.target.classList.remove('close')
+				e.target.classList.add('open')
+				e.target.innerHTML = '展开 &#xe67d;'
+			}
+		}
+	})
+</script>
 </html>
