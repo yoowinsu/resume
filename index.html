@@ -236,7 +236,7 @@
 			<h3 class="title">项目经验</h3>
 			<ul class="project">
 				<li class="baicaowei">
-					<button class="open">展开 &#xe67d;</button>
+					<button class="open">&#xe67d;</button>
 					<h4>百草味商城</h4>
 					<ul>
 						<li class="time">
@@ -259,7 +259,7 @@
 					</ul>
 				</li>
 				<li class="todo">
-					<button class="open">展开 &#xe67d;</button>
+					<button class="open">&#xe67d;</button>
 					<h4>Todolist</h4>
 					<ul>
 						<li class="time">
@@ -281,7 +281,7 @@
 					</ul>
 				</li>
 				<li class="stickers">
-					<button class="open">展开 &#xe67d;</button>
+					<button class="open">&#xe67d;</button>
 					<h4>在线便利贴</h4>
 					<ul>
 						<li class="time">
@@ -304,7 +304,7 @@
 					</ul>
 				</li>
 				<li class="react">
-					<button class="open">展开 &#xe67d;</button>
+					<button class="open">&#xe67d;</button>
 					<h4>在线简历编辑器</h4>
 					<ul>
 						<li class="time">
@@ -329,7 +329,7 @@
 					</ul>
 				</li>
 				<li class="package-repo">
-					<button class="open">展开 &#xe67d;</button>
+					<button class="open">&#xe67d;</button>
 					<h4>JS组件库</h4>
 					<ul>
 						<li class="time">
@@ -348,7 +348,7 @@
 					</ul>
 				</li>
 				<li class="often">
-					<button class="open">展开 &#xe67d;</button>
+					<button class="open">&#xe67d;</button>
 					<h4>日常实现的一些效果</h4>
 					<ul>
 						<li class="time">
@@ -412,11 +412,11 @@
 			if(e.target.className === 'open'){
 				e.target.classList.remove('open')
 				e.target.classList.add('close')
-				e.target.innerHTML = '收起 &#xe686;'
+				e.target.innerHTML = '&#xe686;'
 			}else{
 				e.target.classList.remove('close')
 				e.target.classList.add('open')
-				e.target.innerHTML = '展开 &#xe67d;'
+				e.target.innerHTML = '&#xe67d;'
 			}
 		}
 	})
@@ -428,7 +428,7 @@
 			for (var i = 0; i < openBtns.length; i++) {
 				openBtns[i].classList.remove('open')
 				openBtns[i].classList.add('close')
-				openBtns[i].innerHTML = '收起 &#xe686;'
+				openBtns[i].innerHTML = '&#xe686;'
 			}
 		}else{
 			this.innerHTML = '一键展开 &#xe67d;'
@@ -437,7 +437,7 @@
 			for (var i = 0; i < openBtns.length; i++) {
 				openBtns[i].classList.remove('close')
 				openBtns[i].classList.add('open')
-				openBtns[i].innerHTML = '展开 &#xe67d;'
+				openBtns[i].innerHTML = '&#xe67d;'
 			}
 		}
 	})
