@@ -31,6 +31,9 @@
 	i{
 		font-style: normal;
 	}
+	p{
+		line-height: 22px;
+	}
 	
 	/*base*/
 	
@@ -43,25 +46,23 @@
 		font-size: 0.14rem;
 	}
 
-	.title{
-		position: relative;
-		left: -0.2rem;
-		padding-left: 0.2rem;
-		background: linear-gradient(to right, #FFE5EF, #fff);
-	}
-
 	.layout{
 		position: relative;
 		max-width: 7rem;
 		margin-left: auto;
 		margin-right: auto;
-		padding: 0.4rem;
+		padding: 0.1rem 0.4rem;
+	}
+
+	h3.name{
+		margin-top: 0.15rem;
+		font-size: 18px;
 	}
 
 	.before-title{
 		position: absolute;
 		left: -0.05rem;
-		top: 0.57rem;
+		top: 0.27rem;
 	}
 	.before-title>i{
 		margin-right: 0.01rem;
@@ -82,8 +83,12 @@
 		background-color: #00A1DD;
 	}
 
-	.layout h3{
-		margin: 0.15rem 0;
+	.layout h3.title{
+		line-height: 22px;
+		padding: 10px 0;
+		font-size: 18px;
+		border-bottom: 1px solid #ddd;
+		/*background: linear-gradient(to right, #FFE5EF, #fff);*/
 	}
 
 	.base-info .contact span{
@@ -97,9 +102,18 @@
 		font-size: 0.26rem;
 		vertical-align: middle;
 	}
-
-	.company-history p{
+	
+	.company-history>ul{
+		margin-bottom: 16px;
+	}
+	.company-history p,.project .time p,.project .address p{
 		padding-left: 0.1rem;
+	}
+	.company-history .company,.company-history .company-time,.project .time,.project .address{
+		display: flex;
+	}
+	.company-history .company p,.company-history .company-time p,.project .time p,.project .address p{
+		line-height: 26px;
 	}
 
 	.experience{
@@ -119,10 +133,14 @@
 	}
 	.experience>button{
 		z-index: 1;
+		top: 16px;
 	}
-
+	
+	.project h4{
+		font-size: 14px;
+	}
 	.project>li{
-		margin: 0.1rem 0 0.25rem;
+		margin: 0.1rem 0 0.15rem;
 		position: relative;
 	}
 	.project>li>button.open~ul{
@@ -137,7 +155,8 @@
 	}
 
 	h5{
-		margin: 0.08rem 0;
+		line-height: 26px;
+		font-size: 14px;
 	}
 	.skill-list h5{
 		margin-left: -0.1rem;
@@ -161,7 +180,7 @@
 		<div class="before-title">
 			<i></i><i></i><i></i>
 		</div>
-		<h3>苏英伟</h3>
+		<h3 class="name">苏英伟</h3>
 		<div class="base-info">
 			<img src="" alt="">
 			<h3 class="title">基本信息</h3>
@@ -180,28 +199,28 @@
 		<div class="company-history">
 			<h3 class="title">工作经历</h3>
 			<ul>
-				<li>
+				<li class="company">
 					<h5>公司</h5>
 					<p>并行</p>
 				</li>
-				<li>
+				<li class="company-time">
 					<h5>时间</h5>
 					<p>2016/6——2017/9</p>
 				</li>
 				<li>
 					<h5>工作内容</h5>
-					<p>1.1.参与前端系统设计和开发</p>
+					<p>1.参与前端系统设计和开发</p>
 					<p>2.配合后端工程师进行前后端整合</p>
 					<p>3.封装并行前端基础库</p>
 					<p>4.调试并优化，并作出前端改进建议（用户体验）</p>
 				</li>
 			</ul>
 			<ul>
-				<li>
+				<li class="company">
 					<h5>公司</h5>
 					<p>正星科技（实习）</p>
 				</li>
-				<li>
+				<li class="company-time">
 					<h5>时间</h5>
 					<p>2016/2——2016/6</p>
 				</li>
@@ -220,7 +239,7 @@
 					<button class="open">展开 &#xe67d;</button>
 					<h4>百草味商城</h4>
 					<ul>
-						<li>
+						<li class="time">
 							<h5>时间</h5>
 							<p>2016/5——2016/10</p>
 						</li>
@@ -233,7 +252,7 @@
 							<p>1.本项目是一个具备购物类网站基本常用功能的项目</p>
 							<p>2.本项目基于jQuery库，实现了主页二级菜单、banner轮播、sidebar、登录注册以及购物车页面等功能设计优雅、内容完善的静态简历页面</p>
 						</li>
-						<li>
+						<li class="address">
 							<h5>项目地址</h5>
 							<p><a href="https://yoowinsu.github.io/baicaowei/index.html">百草味商城</a></p>
 						</li>
@@ -243,7 +262,7 @@
 					<button class="open">展开 &#xe67d;</button>
 					<h4>Todolist</h4>
 					<ul>
-						<li>
+						<li class="time">
 							<h5>时间</h5>
 							<p>2017/4——2017/5</p>
 						</li>
@@ -255,7 +274,7 @@
 							<h5>使用技术</h5>
 							<p>ES6、Flex、Vue、vue-cli</p>
 						</li>
-						<li>
+						<li class="address">
 							<h5>项目地址</h5>
 							<p><a href="https://yoowinsu.github.io/vue-todolist">todolist</a></p>
 						</li>
@@ -265,7 +284,7 @@
 					<button class="open">展开 &#xe67d;</button>
 					<h4>在线便利贴</h4>
 					<ul>
-						<li>
+						<li class="time">
 							<h5>时间</h5>
 							<p>2017/4——2017/6</p>
 						</li>
@@ -278,7 +297,7 @@
 							<p>1.本项目是基于express框架实现的一个前后端的在线便利贴项目</p>
 							<p>2.本项目实现了GitHub登录功能，利用Sequelize数据库保存用户数据，根据发布订阅模式实现toast功能</p>
 						</li>
-						<li>
+						<li class="address">
 							<h5>项目地址</h5>
 							<p><a href="https://github.com/yoowinsu/express-sticky-note">在线便利贴</a></p>
 						</li>
@@ -288,7 +307,7 @@
 					<button class="open">展开 &#xe67d;</button>
 					<h4>在线简历编辑器</h4>
 					<ul>
-						<li>
+						<li class="time">
 							<h5>时间</h5>
 							<p>2017/5——2017/7</p>
 						</li>
@@ -303,7 +322,7 @@
 							<p>3.页面很简洁，实现了登录注册功能，提供6中视觉UI可供选择</p>
 							<p>4.web端自适应</p>
 						</li>
-						<li>
+						<li class="address">
 							<h5>项目地址</h5>
 							<p><a href="https://yoowinsu.github.io/vue-resume-editor/dist/">在线简历编辑器</a></p>
 						</li>
@@ -313,7 +332,7 @@
 					<button class="open">展开 &#xe67d;</button>
 					<h4>JS组件库</h4>
 					<ul>
-						<li>
+						<li class="time">
 							<h5>时间</h5>
 							<p>2017/1——2017/8</p>
 						</li>
@@ -322,7 +341,7 @@
 							<p>1.对一些常用的功能进行了组件封装</p>
 							<p>2.包括轮播、Tab、分页、dialog、日历、懒加载等组件</p>
 						</li>
-						<li>
+						<li class="address">
 							<h5>项目地址</h5>
 							<p><a href="https://github.com/yoowinsu/fe-components">JS组件库</a></p>
 						</li>
@@ -332,7 +351,7 @@
 					<button class="open">展开 &#xe67d;</button>
 					<h4>日常实现的一些效果</h4>
 					<ul>
-						<li>
+						<li class="time">
 							<h5>时间</h5>
 							<p>2016/9——2017-8</p>
 						</li>
@@ -340,7 +359,7 @@
 							<h5>项目描述</h5>
 							<p>日常做的小项目、静态页、小功能、效果、CSS布局等等</p>
 						</li>
-						<li>
+						<li class="address">
 							<h5>项目地址</h5>
 							<p><a href="https://github.com/yoowinsu/demos">日常实现的一些效果</a></p>
 						</li>
