@@ -102,17 +102,23 @@
 		padding-left: 0.1rem;
 	}
 
+	.experience{
+		position: relative;
+	}
 	.experience button{
 		font-family: "iconfont";
 		font-size: 12px;
 		background-color: transparent;
 		border: none;
-		color: #8590a6;
+		color: #777;
 		outline: none;
 		position: absolute;
 		top: 2px;
 		right: 10px;
 		cursor: pointer;
+	}
+	.experience>button{
+		z-index: 1;
 	}
 
 	.project>li{
@@ -144,6 +150,9 @@
 			text-align: center;
 			font-size: 24px;
 		}
+		.open,.close{
+			display: none;
+		}
 	}
 	</style>
 </head>
@@ -173,22 +182,38 @@
 			<ul>
 				<li>
 					<h5>公司</h5>
-					<p>岁月树</p>
+					<p>并行</p>
 				</li>
 				<li>
 					<h5>时间</h5>
-					<p>2016/3——2017/8</p>
+					<p>2016/6——2017/9</p>
 				</li>
 				<li>
 					<h5>工作内容</h5>
-					<p>1.根据设计稿搭建静态页面（主要还原设计稿，考虑兼容性）</p>
-					<p>2.与后台联调接入数据</p>
-					<p>3.处理页面交互功能，做必要的封装</p>
-					<p>4.调试并优化性能</p>
+					<p>1.1.参与前端系统设计和开发</p>
+					<p>2.配合后端工程师进行前后端整合</p>
+					<p>3.封装并行前端基础库</p>
+					<p>4.调试并优化，并作出前端改进建议（用户体验）</p>
+				</li>
+			</ul>
+			<ul>
+				<li>
+					<h5>公司</h5>
+					<p>正星科技（实习）</p>
+				</li>
+				<li>
+					<h5>时间</h5>
+					<p>2016/2——2016/6</p>
+				</li>
+				<li>
+					<h5>工作内容</h5>
+					<p>1.负责部分网站交互设计以及前端页面实现</p>
+					<p>2.与后端交流分析需求和接口实现</p>
 				</li>
 			</ul>
 		</div>
 		<div class="experience">
+			<button class="open">一键展开 &#xe67d;</button>
 			<h3 class="title">项目经验</h3>
 			<ul class="project">
 				<li class="baicaowei">
@@ -276,6 +301,7 @@
 							<p>1.本项目是一个可以在线编辑及生成简历的项目，提供预览和pdf下载功能</p>
 							<p>2.项目基于Vue框架，构建工具是vue-cli</p>
 							<p>3.页面很简洁，实现了登录注册功能，提供6中视觉UI可供选择</p>
+							<p>4.web端自适应</p>
 						</li>
 						<li>
 							<h5>项目地址</h5>
@@ -358,6 +384,9 @@
 </body>
 <script>
 	let ul = document.querySelector('ul.project');
+	let allBtn = document.querySelector('.experience>button');
+	let openBtns = document.querySelectorAll('.project button.open');
+
 
 	ul.addEventListener('click',function (e) {
 		if(e.target.tagName.toLowerCase() === 'button'){
@@ -369,6 +398,27 @@
 				e.target.classList.remove('close')
 				e.target.classList.add('open')
 				e.target.innerHTML = '展开 &#xe67d;'
+			}
+		}
+	})
+	allBtn.addEventListener('click',function (){
+		if(this.className === 'open'){
+			this.innerHTML = '一键收起 &#xe686;'
+			this.classList.remove('open')
+			this.classList.add('close')
+			for (var i = 0; i < openBtns.length; i++) {
+				openBtns[i].classList.remove('open')
+				openBtns[i].classList.add('close')
+				openBtns[i].innerHTML = '收起 &#xe686;'
+			}
+		}else{
+			this.innerHTML = '一键展开 &#xe67d;'
+			this.classList.add('open')
+			this.classList.remove('close')
+			for (var i = 0; i < openBtns.length; i++) {
+				openBtns[i].classList.remove('close')
+				openBtns[i].classList.add('open')
+				openBtns[i].innerHTML = '展开 &#xe67d;'
 			}
 		}
 	})
