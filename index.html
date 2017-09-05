@@ -138,6 +138,7 @@
 	
 	.project h4{
 		font-size: 14px;
+		cursor: pointer;
 	}
 	.project>li{
 		margin: 0.1rem 0 0.15rem;
@@ -420,6 +421,21 @@
 			}
 		}
 	})
+	ul.addEventListener('click',function (e) {
+		if(e.target.tagName.toLowerCase() === 'h4'){
+			let btn = e.target.parentNode.childNodes[1]
+			if(btn.className === 'open'){
+				btn.classList.remove('open')
+				btn.classList.add('close')
+				btn.innerHTML = '&#xe686;'
+			}else{
+				btn.classList.remove('close')
+				btn.classList.add('open')
+				btn.innerHTML = '&#xe67d;'
+			}
+		}
+	})
+
 	allBtn.addEventListener('click',function (){
 		if(this.className === 'open'){
 			this.innerHTML = '一键收起'
