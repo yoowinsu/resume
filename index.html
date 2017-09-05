@@ -85,7 +85,7 @@
 
 	.layout h3.title{
 		line-height: 22px;
-		padding: 10px 0;
+		padding: 10px 0 6px;
 		font-size: 18px;
 		border-bottom: 1px solid #ddd;
 		/*background: linear-gradient(to right, #FFE5EF, #fff);*/
@@ -103,7 +103,7 @@
 		vertical-align: middle;
 	}
 	
-	.company-history>ul{
+	.company-history>ul:not(.last){
 		margin-bottom: 16px;
 	}
 	.company-history p,.project .time p,.project .address p{
@@ -127,7 +127,7 @@
 		color: #777;
 		outline: none;
 		position: absolute;
-		top: 2px;
+		top: 6px;
 		right: 10px;
 		cursor: pointer;
 	}
@@ -136,12 +136,16 @@
 		top: 16px;
 	}
 	
+	.project{
+		padding-top: 6px;
+	}
 	.project h4{
 		font-size: 14px;
 		cursor: pointer;
+		line-height: 24px;
+		margin-bottom: 4px;
 	}
 	.project>li{
-		margin: 0.1rem 0 0.15rem;
 		position: relative;
 	}
 	.project>li>button.open~ul{
@@ -216,7 +220,7 @@
 					<p>4.调试并优化，并作出前端改进建议（用户体验）</p>
 				</li>
 			</ul>
-			<ul>
+			<ul class="last">
 				<li class="company">
 					<h5>公司</h5>
 					<p>正星科技（实习）</p>
