@@ -87,10 +87,13 @@
 		line-height: 22px;
 		padding: 10px 0 6px;
 		font-size: 18px;
-		border-bottom: 1px solid #ddd;
+		border-bottom: 1px solid #ccc;
 		/*background: linear-gradient(to right, #FFE5EF, #fff);*/
 	}
 
+	.base-info{
+		margin-top: 10px;
+	}
 	.base-info .contact span{
 		font-weight: 700;
 	}
@@ -104,7 +107,10 @@
 	}
 	
 	.company-history>ul:not(.last){
-		margin-bottom: 16px;
+		margin-bottom: 6px;
+		border-bottom: 1px dashed #ddd;
+		padding-bottom: 4px;
+
 	}
 	.company-history p,.project .time p,.project .address p{
 		padding-left: 0.1rem;
@@ -148,6 +154,10 @@
 	.project>li{
 		position: relative;
 	}
+	.project>li:not(.often){
+		border-bottom: 1px dashed #ddd;
+		padding: 4px 0;
+	}
 	.project>li>button.open~ul{
 		display: none;
 	}
@@ -165,6 +175,7 @@
 	}
 	.skill-list h5{
 		margin-left: -0.1rem;
+		font-size: 12px;
 	}
 
 
@@ -187,7 +198,6 @@
 		</div>
 		<h3 class="name">苏英伟</h3>
 		<div class="base-info">
-			<img src="" alt="">
 			<h3 class="title">基本信息</h3>
 			<div class="contact">
 				<ul>
@@ -391,11 +401,11 @@
 				<li class="tools">
 					<h5>库/工具</h5>
 					<p>熟悉jQuery、Bootstrap</p>
-					<p>有NPM、Gulp、Webpack、Less等工具使用经验</p>
+					<p>有npm、gulp、webpack、less、sass等工具使用经验</p>
 				</li>
 				<li class="rear-end">
 					<h5>后端语言</h5>
-					<p>了解Node.js, HTTP</p>
+					<p>了解Node.js、HTTP</p>
 				</li>
 				<li class="other">
 					<h5>新技术/其他</h5>
