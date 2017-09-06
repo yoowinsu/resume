@@ -152,10 +152,10 @@
 	}
 	.project>li{
 		position: relative;
+		padding: 4px 0;
 	}
 	.project>li:not(.often){
 		border-bottom: 1px dashed #ddd;
-		padding: 4px 0;
 	}
 	.project>li>button.open~ul{
 		display: none;
@@ -197,6 +197,11 @@
 			right: 0;
 			top: 4px;
 			font-size: 12px;
+		}
+	}
+	@media (min-width: 768px){
+		.contact>ul>li:hover,.company-history>ul:hover,.project>li>ul:hover{
+			background-color: #FEFEF1;
 		}
 	}
 	</style>
