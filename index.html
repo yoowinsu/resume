@@ -177,15 +177,26 @@
 		font-size: 12px;
 	}
 
-
+	.resume{
+		display: none;
+	}
 
 	@media print{
 		.layout>h3{
 			text-align: center;
 			font-size: 24px;
+			position: relative;
 		}
 		.open,.close{
 			display: none;
+		}
+		.resume{
+			display: block;
+			text-align: right;
+			position: absolute;
+			right: 0;
+			top: 4px;
+			font-size: 12px;
 		}
 	}
 	</style>
@@ -195,7 +206,7 @@
 		<div class="before-title">
 			<i></i><i></i><i></i>
 		</div>
-		<h3 class="name">苏英伟</h3>
+		<h3 class="name">苏英伟<a class="resume" href="https://yoowinsu.github.io/resume/">[在线简历]</a></h3>
 		<div class="base-info">
 			<h3 class="title">基本信息</h3>
 			<div class="contact">
