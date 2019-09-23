@@ -1,233 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>苏英伟_前端工程师_15538035803</title>
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<style>
-		@font-face {
-			font-family: 'iconfont';  /* project id 330830 */
-			src: url('//at.alicdn.com/t/font_330830_mbsb1ka7dczvvx6r.eot');
-			src: url('//at.alicdn.com/t/font_330830_mbsb1ka7dczvvx6r.eot?#iefix') format('embedded-opentype'),
-			url('//at.alicdn.com/t/font_330830_mbsb1ka7dczvvx6r.woff') format('woff'),
-			url('//at.alicdn.com/t/font_330830_mbsb1ka7dczvvx6r.ttf') format('truetype'),
-			url('//at.alicdn.com/t/font_330830_mbsb1ka7dczvvx6r.svg#iconfont') format('svg');
-		}
-	/*cssreset*/
-	*{
-		margin: 0;
-		padding: 0;
-		box-sizing: border-box;
-	}
-
-	ul{
-		list-style: none;
-	}
-
-	a{
-		text-decoration: none;
-	}
-
-	i{
-		font-style: normal;
-	}
-	p{
-		line-height: 22px;
-	}
-	
-	/*base*/
-	
-	html{
-		font-size: 100px;
-	}
-
-
-	body{
-		font-size: 0.14rem;
-	}
-
-	.layout{
-		position: relative;
-		max-width: 7rem;
-		margin-left: auto;
-		margin-right: auto;
-		padding: 0.1rem 0.4rem;
-	}
-
-	h3.name{
-		margin-top: 0.15rem;
-		font-size: 18px;
-	}
-
-	.before-title{
-		position: absolute;
-		left: -0.05rem;
-		top: 0.27rem;
-	}
-	.before-title>i{
-		margin-right: 0.01rem;
-		width: 0.12rem;
-		height: 0.12rem;
-		display: inline-block;
-	}
-
-	.before-title i:nth-of-type(1){
-		background-color: #FEC500;
-	}
-
-	.before-title i:nth-of-type(2){
-		background-color: #FE400F;
-	}
-
-	.before-title i:nth-of-type(3){
-		background-color: #00A1DD;
-	}
-
-	.layout h3.title{
-		line-height: 22px;
-		padding: 10px 0 6px;
-		font-size: 18px;
-		border-bottom: 1px solid #ccc;
-		/*background: linear-gradient(to right, #FFE5EF, #fff);*/
-	}
-
-	.base-info{
-		margin-top: 10px;
-	}
-	.base-info .contact span{
-		font-weight: 700;
-	}
-
-	.base-info .contact li i{
-		font-family: "iconfont";
-		font-size: 0.16rem;
-		padding-right: 0.14rem;
-		font-size: 0.24rem;
-		vertical-align: middle;
-	}
-	
-	.company-history>ul:not(.last){
-		margin-bottom: 6px;
-		border-bottom: 1px dashed #ddd;
-		padding-bottom: 4px;
-
-	}
-	.company-history p,.project .time p,.project .address p{
-		padding-left: 0.1rem;
-	}
-	.company-history .company,.company-history .company-time,.project .time,.project .address{
-		display: flex;
-	}
-	.company-history .company p,.company-history .company-time p,.project .time p,.project .address p{
-		line-height: 26px;
-	}
-
-	.experience{
-		position: relative;
-	}
-	.experience button{
-		font-family: "iconfont";
-		font-size: 12px;
-		background-color: transparent;
-		border: none;
-		color: #777;
-		outline: none;
-		position: absolute;
-		top: 10px;
-		right: 4px;
-		cursor: pointer;
-	}
-	.experience>button{
-		z-index: 1;
-		top: 13px;
-	}
-	
-	.project{
-		padding-top: 6px;
-	}
-	.project h4{
-		font-size: 14px;
-		cursor: pointer;
-		line-height: 24px;
-	}
-	.project>li{
-		position: relative;
-		padding: 4px 0;
-	}
-	.project>li:not(.often){
-		border-bottom: 1px dashed #ddd;
-	}
-	.project>li>button.open~ul{
-		display: none;
-	}
-	.project>li>button.close~ul{
-		display: block;
-	}
-
-	.project>li>ul,.skill .skill-list{
-		padding-left: 0.1rem;
-	}
-
-	h5{
-		line-height: 26px;
-		font-size: 14px;
-	}
-	.skill-list h5{
-		margin-left: -0.1rem;
-		font-size: 12px;
-	}
-
-	.resume{
-		display: none;
-	}
-
-	@media print{
-		.layout>h3{
-			text-align: center;
-			font-size: 24px;
-			position: relative;
-		}
-		.open,.close{
-			display: none;
-		}
-		.resume{
-			display: block;
-			text-align: right;
-			position: absolute;
-			right: 0;
-			top: 4px;
-			font-size: 12px;
-		}
-	}
-	@media (min-width: 768px){
-		.contact>ul>li:hover,.company-history>ul:hover,.project>li>ul:hover{
-			background-color: #FEFEF1;
-		}
-	}
-	</style>
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="//at.alicdn.com/t/font_330830_x6p1efscc7.css">
 </head>
+
 <body>
 	<div class="layout">
 		<div class="before-title">
 			<i></i><i></i><i></i>
 		</div>
 		<h3 class="name">苏英伟<a class="resume" href="https://yoowinsu.github.io/resume/">[在线简历]</a></h3>
-		<div class="base-info">
+
+		<!-- 基本信息 -->
+		<div class="base-info section">
 			<h3 class="title">基本信息</h3>
 			<div class="contact">
-				<ul>
-					<li><i>&#xe66f;</i><span>个人：</span>25/男</li>
-					<li><i>&#xe624;</i><span>邮箱：</span>yoowinsu@126.com</li>
-					<li><i>&#xe6ed;</i><span>电话：</span>15538035803</li>
-					<li><i>&#xe60e;</i><span>微信：</span>suyingwei03</li>
-					<li><i>&#xe640;</i><span>学历：</span>黄河科技学院-本科</li>
-					<li><i>&#xe634;</i><span>博客：</span><a href="https://yoowin.me/">yoowin.me</a></li>
-					<li><i>&#xeaf6;</i><span>github：</span><a href="https://github.com/yoowinsu">github.com/yoowinsu</a></li>
+				<ul class="list">
+					<!-- <li><i>&#xe66f;</i><span>个人：</span>25/男</li> -->
+					<li><i class="iconfont icon-youxiang1"></i><span>邮箱：</span>yoowinsu@126.com</li>
+					<li><i class="iconfont icon-dianhua2"></i><span>电话：</span>15538035803</li>
+					<!-- <li><i class="iconfont icon-weixin3"></i><span>微信：</span>suyingwei03</li> -->
+					<li><i class="iconfont icon-xueli"></i><span>学历：</span>黄河科技学院-本科</li>
+					<li><i class="iconfont icon-github2"></i><span>github：</span><a target="_blank"
+							href="https://github.com/yoowinsu">github.com/yoowinsu</a>
+					</li>
+					<li><i class="iconfont icon-blog1"></i><span>博客：</span><a target="_blank"
+							href="https://www.yoowin.me/">www.yoowin.me</a></li>
 				</ul>
 			</div>
 		</div>
-		<div class="company-history">
+
+		<!-- 技能概况 -->
+		<div class="skill section">
+			<h3 class="title">技能概况</h3>
+			<div class="skill-list">
+				<p>● 精确实现设计图到页面</p>
+				<p>● 理解盒模型、BFC、原型、闭包、DOM事件流、作用域等概念</p>
+				<p>● 掌握常用JS、ES6+</p>
+				<p>● 熟练使用Vue/React开发</p>
+				<p>● 熟悉常见浏览器兼容问题</p>
+				<p>● 熟悉前端协作规范</p>
+			</div>
+		</div>
+
+		<!-- 工作经历 -->
+		<div class="company-history section">
 			<h3 class="title">工作经历</h3>
+			<ul>
+				<li class="company">
+					<h5>公司</h5>
+					<p>金帮手</p>
+				</li>
+				<li class="company-time">
+					<h5>时间</h5>
+					<p>2017/11——2019/9</p>
+				</li>
+				<li>
+					<h5>工作内容</h5>
+					<p>1. 负责前端技术选型、构建</p>
+					<p>2. 封装前端基础组件库</p>
+					<p>3. 推动并实际引入Vue、React开发，ESLint规范，prettier格式化工具</p>
+					<p>4. 对项目性能进行优化</p>
+					<p>5. 定期组织内部技术分享以及开发问题讨论</p>
+				</li>
+			</ul>
 			<ul>
 				<li class="company">
 					<h5>公司</h5>
@@ -235,253 +77,144 @@
 				</li>
 				<li class="company-time">
 					<h5>时间</h5>
-					<p>2016/6——2017/9</p>
+					<p>2016/9——2017/9</p>
 				</li>
 				<li>
 					<h5>工作内容</h5>
-					<p>1.参与前端系统设计和开发</p>
-					<p>2.配合后端工程师进行前后端整合</p>
-					<p>3.封装并行前端基础库</p>
-					<p>4.调试并优化，并作出前端改进建议（用户体验）</p>
-				</li>
-			</ul>
-			<ul class="last">
-				<li class="company">
-					<h5>公司</h5>
-					<p>正星科技（实习）</p>
-				</li>
-				<li class="company-time">
-					<h5>时间</h5>
-					<p>2016/2——2016/6</p>
-				</li>
-				<li>
-					<h5>工作内容</h5>
-					<p>1.负责部分网站交互设计以及前端页面实现</p>
-					<p>2.与后端交流分析需求和接口实现</p>
+					<p>1. 参与前端页面开发</p>
+					<p>2. 配合后端进行对接联调</p>
+					<p>3. 调试并优化，并作出前端改进建议</p>
 				</li>
 			</ul>
 		</div>
-		<div class="experience">
-			<button class="open">一键展开</button>
-			<h3 class="title">项目经验</h3>
+
+		<!-- 项目经历 -->
+		<div class="experience section">
+			<button class="close">一键展开</button>
+			<h3 class="title">项目经历</h3>
 			<ul class="project">
-				<li class="baicaowei">
-					<button class="open">&#xe67d;</button>
-					<h4>百草味商城</h4>
+				<li class="item">
+					<button class="open iconfont icon-shouqi5"></button>
+					<h4>海券</h4>
 					<ul>
-						<li class="time">
-							<h5>时间</h5>
-							<p>2016/5——2016/10</p>
+						<li>
+							<h5>技术</h5>
+							<p>Vue、Vue-router、Vuex、Scss、axios</p>
 						</li>
 						<li>
-							<h5>使用技术</h5>
-							<p>jQuery、CSS</p>
-						</li>
-						<li>
-							<h5>项目简述</h5>
-							<p>1.本项目是一个具备购物类网站基本常用功能的项目</p>
-							<p>2.本项目基于jQuery库，实现了主页二级菜单、banner轮播、sidebar、登录注册以及购物车页面等功能设计优雅、内容完善的静态简历页面</p>
+							<h5>主要工作</h5>
+							<p>1. 项目是一个智能导购，领取优惠券的APP</p>
+							<p>2. 基于Vue全家桶开发，结合apicloud打包app</p>
+							<p>3. 负责页面实现、组件开发、接口对接、联调测试</p>
 						</li>
 						<li class="address">
-							<h5>项目地址</h5>
-							<p><a href="https://yoowinsu.github.io/baicaowei/index.html" target="_blank">百草味商城</a></p>
+							<h5>预览</h5>
+							<p><a href="http://m.hqapp.shop/" target="_blank">海券</a></p>
 						</li>
 					</ul>
 				</li>
-				<!-- <li class="todo">
-					<button class="open">&#xe67d;</button>
-					<h4>博客yoowin.me</h4>
+				<li class="item">
+					<button class="open iconfont icon-shouqi5"></button>
+					<h4>红太阳</h4>
 					<ul>
-						<li class="time">
-							<h5>时间</h5>
-							<p>2016/11——2017/8</p>
+						<li>
+							<h5>技术</h5>
+							<p>React、React-router、React-redux、Scss、Ant-Design-Mobile、axios</p>
 						</li>
 						<li>
-							<h5>项目简述</h5>
-							<p>1.基于hexo生成的博客系统，托管于coding pages</p>
-							<p>2.页面简洁，经常写博客</p>
+							<h5>主要工作</h5>
+							<p>1. 项目是一个集商城、游戏、虚拟币种交易的平台</p>
+							<p>2. 基于React hooks函数式组件开发</p>
+							<p>3. 负责页面实现、组件开发、接口对接、联调测试</p>
 						</li>
 						<li class="address">
-							<h5>项目地址</h5>
-							<p><a href="https://yoowin.me">yoowin.me</a></p>
-						</li>
-					</ul>
-				</li> -->
-				<li class="stickers">
-					<button class="open">&#xe67d;</button>
-					<h4>在线便利贴</h4>
-					<ul>
-						<li class="time">
-							<h5>时间</h5>
-							<p>2017/4——2017/6</p>
-						</li>
-						<li>
-							<h5>使用技术</h5>
-							<p>Node.js、express、less、jQuery、webpack、ES6、Sequelize</p>
-						</li>
-						<li>
-							<h5>项目简述</h5>
-							<p>1.本项目是基于express框架实现的一个前后端的在线便利贴项目</p>
-							<p>2.本项目实现了GitHub登录功能，利用Sequelize数据库保存用户数据，根据发布订阅模式实现toast功能</p>
-						</li>
-						<li class="address">
-							<h5>项目地址</h5>
-							<p><a href="https://github.com/yoowinsu/express-sticky-note" target="_blank">在线便利贴</a></p>
+							<h5>预览</h5>
+							<p><a href="http://47.105.179.197:3000" target="_blank">红太阳</a></p>
 						</li>
 					</ul>
 				</li>
-				<li class="react">
-					<button class="open">&#xe67d;</button>
-					<h4>在线简历编辑器</h4>
+				<li class="item">
+					<button class="open iconfont icon-shouqi5"></button>
+					<h4>胜天游戏</h4>
 					<ul>
-						<li class="time">
-							<h5>时间</h5>
-							<p>2017/5——2017/7</p>
+						<li>
+							<h5>技术</h5>
+							<p>Vue、Vue-router、Vuex、Scss、Vue-i18n</p>
 						</li>
 						<li>
-							<h5>使用技术</h5>
-							<p>Vue、Vue-cli、scss、ES6、webpack</p>
-						</li>
-						<li>
-							<h5>项目简述</h5>
-							<p>1.本项目是一个可以在线编辑及生成简历的项目，提供预览和pdf下载功能</p>
-							<p>2.项目基于Vue框架，构建工具是vue-cli</p>
-							<p>3.页面很简洁，实现了登录注册功能，提供6中视觉UI可供选择</p>
-							<p>4.web端自适应</p>
-						</li>
-						<li class="address">
-							<h5>项目地址</h5>
-							<p><a href="https://yoowinsu.github.io/vue-resume-editor/dist/" target="_blank">在线简历编辑器</a></p>
+							<h5>主要工作</h5>
+							<p>1. 项目是一个混合开发的游戏平台</p>
+							<p>2. 开发了平台的流程页面、游戏部分的爆点游戏，解决了游戏性能和显示即时性的准确度问题</p>
+							<p>3. 负责页面实现、组件开发、接口对接、联调测试</p>
 						</li>
 					</ul>
 				</li>
-				<li class="">
-					<button class="open">&#xe67d;</button>
-					<h4>融创中国</h4>
+				<li class="item">
+					<button class="open iconfont icon-shouqi5"></button>
+					<h4>润佳宠车无人货架（公众号）</h4>
 					<ul>
-						<li class="time">
-							<h5>时间</h5>
-							<p>2017/4——2017/5</p>
+						<li>
+							<h5>技术</h5>
+							<p>Vue、Vue-router、Vuex、Scss</p>
 						</li>
 						<li>
-							<h5>项目描述</h5>
-							<p>1.布局、UI、内容、交互都是自己设计构想的</p>
-							<p>2.有实现首屏轮播、动画等功能</p>
-						</li>
-						<li class="address">
-							<h5>项目地址</h5>
-							<p><a href="https://yoowinsu.github.io/demos/%E8%9E%8D%E5%88%9B%E4%B8%AD%E5%9B%BD/index.html" target="_blank">融创中国</a></p>
+							<h5>主要工作</h5>
+							<p>1. 基于老商城，开发的货架扫码新功能</p>
+							<p>2. 负责技术选型、组件开发、微信接口对接、联调测试</p>
 						</li>
 					</ul>
 				</li>
-				<li class="often">
-					<button class="open">&#xe67d;</button>
-					<h4>日常实现的一些效果</h4>
+				<li class="item">
+					<button class="open iconfont icon-shouqi5"></button>
+					<h4>前端效果集合</h4>
 					<ul>
-						<li class="time">
-							<h5>时间</h5>
-							<p>2016/9——2017-8</p>
-						</li>
 						<li>
-							<h5>项目描述</h5>
-							<p>日常做的小项目、静态页、小功能、效果、CSS布局等等</p>
+							<p>汇集了前端常见的Modal框、tab切换、常见布局、懒加载、轮播等组件和效果</p>
 						</li>
 						<li class="address">
-							<h5>项目地址</h5>
-							<p><a href="https://github.com/yoowinsu/demos" target="_blank">日常实现的一些效果</a></p>
+							<h5>预览</h5>
+							<p><a href="https://yoowinsu.github.io/demos/" target="_blank">https://yoowinsu.github.io/demos/</a></p>
 						</li>
 					</ul>
 				</li>
 			</ul>
 		</div>
 
-		<div class="skill">
-			<h3 class="title">技能概况</h3>
-			<ul class="skill-list">
-				<li class="html-css">
-					<h5>HTML/CSS/工具</h5>
-					<p>熟悉w3c规范，熟悉HTML5、CSS3新规范</p>
-					<p>熟悉常见浏览器兼容问题</p>
-					<p>熟悉常见布局、盒模型、浮动、定位、flex</p>
-					<p>熟悉Git版本控制工具，熟悉Sublime、VSCode等IDE，熟悉常用Linux 命令行</p>
-				</li>
-				<li class="javascript">
-					<h5>JavaScript</h5>
-					<p>熟悉js常见效果,实现了原生UI组件库</p>
-					<p>熟悉事件、DOM 操作、AJAX、跨域、闭包、原型链、面向对象、封装</p>
-				</li>
-				<li class="tools">
-					<h5>库/工具</h5>
-					<p>熟悉jQuery、Bootstrap</p>
-					<p>有npm、gulp、webpack、less、sass等工具使用经验</p>
-				</li>
-				<li class="rear-end">
-					<h5>后端语言</h5>
-					<p>了解Node.js、HTTP</p>
-				</li>
-				<li class="other">
-					<h5>新技术/其他</h5>
-					<p>有Vue开发经验</p>
-					<p>有ES6开发经验</p>
-				</li>
-			</ul>
-		</div>
 	</div>
 </body>
 <script>
-	let ul = document.querySelector('ul.project');
-	let allBtn = document.querySelector('.experience>button');
-	let openBtns = document.querySelectorAll('.project button.open');
+	var projectList = document.querySelector('ul.project');
+	var allBtn = document.querySelector('.experience>button');
+	var openBtns = document.querySelectorAll('.project button.open');
 
-
-	ul.addEventListener('click',function (e) {
-		if(e.target.tagName.toLowerCase() === 'button'){
-			if(e.target.className === 'open'){
-				e.target.classList.remove('open')
-				e.target.classList.add('close')
-				e.target.innerHTML = '&#xe686;'
-			}else{
-				e.target.classList.remove('close')
-				e.target.classList.add('open')
-				e.target.innerHTML = '&#xe67d;'
-			}
+	// 单个收起、展开
+	projectList.addEventListener('click', function (e) {
+		if (e.target.tagName.toLowerCase() === 'h4') {
+			var btn = e.target.parentNode.childNodes[1];
+			btn.classList.toggle('open');
 		}
-	})
-	ul.addEventListener('click',function (e) {
-		if(e.target.tagName.toLowerCase() === 'h4'){
-			let btn = e.target.parentNode.childNodes[1]
-			if(btn.className === 'open'){
-				btn.classList.remove('open')
-				btn.classList.add('close')
-				btn.innerHTML = '&#xe686;'
-			}else{
-				btn.classList.remove('close')
-				btn.classList.add('open')
-				btn.innerHTML = '&#xe67d;'
-			}
+		if (e.target.tagName.toLowerCase() === 'button') {
+			e.target.classList.toggle('open')
 		}
 	})
 
-	allBtn.addEventListener('click',function (){
-		if(this.className === 'open'){
+	// 一键收起、展开
+	allBtn.addEventListener('click', function () {
+		this.classList.toggle('open')
+		this.classList.toggle('close')
+		if (this.className === 'open') {
 			this.innerHTML = '一键收起'
-			this.classList.remove('open')
-			this.classList.add('close')
 			for (var i = 0; i < openBtns.length; i++) {
 				openBtns[i].classList.remove('open')
-				openBtns[i].classList.add('close')
-				openBtns[i].innerHTML = '&#xe686;'
 			}
-		}else{
+		}
+		if (this.className === 'close') {
 			this.innerHTML = '一键展开'
-			this.classList.add('open')
-			this.classList.remove('close')
 			for (var i = 0; i < openBtns.length; i++) {
-				openBtns[i].classList.remove('close')
 				openBtns[i].classList.add('open')
-				openBtns[i].innerHTML = '&#xe67d;'
 			}
 		}
 	})
 </script>
+
 </html>

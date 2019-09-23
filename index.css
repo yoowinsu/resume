@@ -1,0 +1,344 @@
+
+		/*cssreset*/
+		* {
+			margin: 0;
+			padding: 0;
+			-webkit-box-sizing: border-box;
+			        box-sizing: border-box;
+		}
+
+		ul {
+			list-style: none;
+		}
+
+		a {
+			text-decoration: none;
+		}
+
+		i {
+			font-style: normal;
+		}
+
+		p {
+			line-height: 22px;
+		}
+
+		/*base*/
+
+		html {
+			font-size: 100px;
+		}
+
+
+		body {
+			font-size: 0.14rem;
+		}
+
+		.layout {
+			position: relative;
+			max-width: 7rem;
+			margin-left: auto;
+			margin-right: auto;
+			padding: 0.1rem 0.4rem 0.4rem;
+		}
+
+		h3.name {
+			margin-top: 0.15rem;
+			font-size: 18px;
+		}
+
+		.before-title {
+			position: absolute;
+			left: -0.05rem;
+			top: 0.27rem;
+		}
+
+		.before-title>i {
+			margin-right: 0.01rem;
+			width: 0.12rem;
+			height: 0.12rem;
+			display: inline-block;
+		}
+
+		.before-title i:nth-of-type(1) {
+			background-color: #FEC500;
+		}
+
+		.before-title i:nth-of-type(2) {
+			background-color: #FE400F;
+		}
+
+		.before-title i:nth-of-type(3) {
+			background-color: #00A1DD;
+		}
+
+		.layout h3.title {
+			line-height: 22px;
+			padding: 10px 0 6px;
+			font-size: 18px;
+		}
+
+		.base-info {
+			margin-top: 10px;
+		}
+
+		.base-info .contact span {
+			font-weight: 700;
+    }
+    
+    .base-info .contact .list {
+			padding-top: 0.12rem;
+			padding-left: 0.1rem;
+    }
+
+    .base-info .contact .list li {
+      margin-bottom: 0.04rem;
+    }
+
+		.base-info .contact li i {
+			font-family: "iconfont";
+			font-size: 0.16rem;
+			padding-right: 0.14rem;
+			font-size: 0.24rem;
+			vertical-align: middle;
+		}
+
+		.company-history>ul {
+			padding-top: 0.12rem;
+			padding-left: 0.1rem;
+		}
+		.company-history>ul:not(.last) {
+			margin-bottom: 6px;
+			border-bottom: 1px dashed #ddd;
+			padding-bottom: 8px;
+
+		}
+
+		.company-history p,
+		.project .time p,
+		.project .address p {
+			padding-left: 0.1rem;
+		}
+
+		.company-history .company,
+		.company-history .company-time,
+		.project .time,
+		.project .address {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+		}
+
+		.company-history .company p,
+		.company-history .company-time p,
+		.project .time p,
+		.project .address p {
+			line-height: 26px;
+		}
+
+		.experience {
+			position: relative;
+		}
+
+		.experience button {
+			font-family: "iconfont";
+			font-size: 12px;
+			background-color: transparent;
+			border: none;
+			color: #777;
+			outline: none;
+			position: absolute;
+			top: 10px;
+			right: 4px;
+			cursor: pointer;
+		}
+
+		.experience>button {
+			z-index: 1;
+			top: 13px;
+		}
+
+		.project {
+			padding-top: 6px;
+		}
+
+		.project h4 {
+			font-size: 14px;
+			cursor: pointer;
+			line-height: 24px;
+		}
+
+		.project>li {
+			position: relative;
+			padding: 4px 0;
+		}
+
+		.project>li:not(.often) {
+			border-bottom: 1px dashed #ddd;
+		}
+
+		.project>li>button {
+			-webkit-transform: rotate(180deg);
+			        transform: rotate(180deg);
+			-webkit-transition: -webkit-transform 0.25s linear;
+			transition: -webkit-transform 0.25s linear;
+			transition: transform 0.25s linear;
+			transition: transform 0.25s linear, -webkit-transform 0.25s linear; 
+		}
+
+		.project>li>button.open {
+			-webkit-transform: rotate(0);
+			        transform: rotate(0);
+			-webkit-transition: -webkit-transform 0.25s linear;
+			transition: -webkit-transform 0.25s linear;
+			transition: transform 0.25s linear;
+			transition: transform 0.25s linear, -webkit-transform 0.25s linear; 
+		}
+
+		.project>li>button.open~ul {
+			display: none;
+		}
+
+		.project>li>button.close~ul {
+			display: block;
+		}
+
+		.project>li>ul,
+		.skill .skill-list {
+      padding-left: 0.1rem;
+      padding-top: 0.12rem;
+		}
+
+		h5 {
+			line-height: 26px;
+			font-size: 14px;
+		}
+
+		.skill-list h5 {
+			margin-left: -0.1rem;
+			font-size: 12px;
+		}
+
+		.resume {
+			display: none;
+    }
+    
+    .layout .section {
+      position: relative;
+    }
+    .layout .section:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0.38rem;
+      left: 0;
+      height: 0;
+      width: 33.3333%;
+      z-index: 1;
+      -webkit-transform: scale(1, 1.2);
+              transform: scale(1, 1.2);
+      background-color: #FEC500;
+      -webkit-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+    }
+    .layout .section:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0.38rem;
+      left: 0;
+      height: 1px;
+      width: 100%;
+      z-index: 1;
+      background-color: #ddd;
+    }
+    .title {
+      position: relative;
+    }
+
+    .title:before {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0.38rem;
+      left: 33.3333%;
+      height: 0;
+      width: 33.3333%;
+      z-index: 2;
+      -webkit-transform: scale(1, 1.2);
+              transform: scale(1, 1.2);
+			background-color: #FE400F;
+      -webkit-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+    }
+
+    .title:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0.38rem;
+      left: 66.6666%;
+      height: 0;
+      width: 33.3333%;
+      z-index: 3;
+      -webkit-transform: scale(1, 1.2);
+              transform: scale(1, 1.2);
+			background-color: #00A1DD;
+      -webkit-transition: all 0.2s linear;
+      transition: all 0.2s linear;
+    }
+
+    .layout .section:hover::before {
+      height: 1px;
+    }
+    .layout .section:hover::after {
+      width: 0;
+      background-color: transparent;
+    }
+    .layout .section:hover .title::before {
+      height: 1px;
+    }
+    .layout .section:hover .title::after {
+      height: 1px;
+    }
+
+		@media print {
+			.layout>h3 {
+				text-align: center;
+				font-size: 24px;
+				position: relative;
+			}
+
+			.open,
+			.close {
+				display: none;
+			}
+
+			.resume {
+				display: block;
+				text-align: right;
+				position: absolute;
+				right: 0;
+				top: 4px;
+				font-size: 12px;
+			}
+		}
+
+		/* 移动端 */
+		@media (max-width: 768px) {
+			.layout {
+				padding: 0.1rem 0.2rem 0.4rem 0.36rem;
+			}
+			.base-info .contact .list, .company-history>ul, .project>li>ul, .skill .skill-list {
+				padding-left: 0;
+			}
+		}
+
+		/* pc */
+		@media (min-width: 768px) {
+			.contact>ul>li:hover,
+			.company-history>ul:hover,
+			.project>li>ul:hover {
+				background-color: #f5f8f8;
+			}
+		}
