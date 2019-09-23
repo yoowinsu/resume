@@ -313,6 +313,10 @@
 			.close {
 				display: none;
 			}
+			
+			.project .item .iconfont {
+				display: none;
+			}
 
 			.resume {
 				display: block;
